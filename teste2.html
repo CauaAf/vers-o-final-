@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .item {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .subitens {
+      display: none;
+      margin-left: 20px;
+    }
+    .mostrar {
+      display: block;
+    }
+  </style>
+  <script>
+    function mostrarSubitens(element) {
+      var subitens = element.nextElementSibling;
+      subitens.classList.toggle('mostrar');
+    }
+  </script>
+</head>
+<body>
+  <ul>
+    <li class="item" onclick="mostrarSubitens(this)">Item 1</li>
+    <ul class="subitens">
+      <li>Subitem 1.1</li>
+      <li>Subitem 1.2</li>
+      <li>Subitem 1.3</li>
+    </ul>
+    <li class="item" onclick="mostrarSubitens(this)">Item 2</li>
+    <ul class="subitens">
+      <li>Subitem 2.1</li>
+      <li>Subitem 2.2</li>
+      <li>Subitem 2.3</li>
+    </ul>
+    <li class="item" onclick="mostrarSubitens(this)">Item 3</li>
+    <ul class="subitens">
+      <li>Subitem 3.1</li>
+      <li>Subitem 3.2</li>
+      <li>Subitem 3.3</li>
+    </ul>
+  </ul>
+</body>
+</html>

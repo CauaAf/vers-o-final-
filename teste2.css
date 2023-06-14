@@ -1,0 +1,6 @@
+#conteudoOculto {
+    display: none;
+  }
+  .mostrando #conteudoOculto {
+    display: block;
+  }
